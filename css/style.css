@@ -1,0 +1,95 @@
+/* loading screen */
+
+.loadingScreen {
+    display: flex;
+    z-index: 9999;
+}
+
+.inner-loadingScreen {
+
+    display: none;
+    z-index: 9999;
+}
+
+body {
+    /* overflow: hidden; */
+    color: white;
+    background-color: black;
+}
+
+a,
+.iconX,
+.logBox i {
+    cursor: pointer;
+}
+
+.logBox{
+
+    width:13%
+}
+
+/* nav menu */
+
+.social-icons div a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.social-icons div {
+    padding-left: 5px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.naVMenu {
+    left: 0;
+    z-index: 999;
+
+}
+
+.slideNav li {
+
+    transform: translateY(400px);
+    transition: all 2s;
+    padding-bottom: 10px;
+}
+
+
+/* main page */
+
+/* img cover */
+
+.bg-mainMeal {
+    background-color: rgb(255, 255, 255, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transform: translateY(110%);
+    transition: all 1s ease;
+}
+
+.mainMeal:hover .bg-mainMeal {
+
+    transform: translateY(0);
+
+}
+
+/* search page */
+
+::placeholder {
+    color: #8a8a8a !important;
+}
+
+@media screen and (max-width : 1000px) {
+
+.logBox {
+
+    width: 10%
+    }
+
+}
